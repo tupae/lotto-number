@@ -78,3 +78,10 @@ function generateLottoNumbers() {
     }
     return Array.from(numbers).sort((a, b) => a - b);
 }
+
+(function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://YOUR_SHORTNAME_HERE.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
